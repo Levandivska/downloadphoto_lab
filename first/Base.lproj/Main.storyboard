@@ -13,7 +13,7 @@
         <!--Main View Controller-->
         <scene sceneID="AYh-Ex-js1">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="LIN-t9-t2V" customClass="MainViewController" customModule="first" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LIN-t9-t2V" customClass="MainViewController" customModule="first" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lpo-QA-Veq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,6 +35,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eXH-c8-sg1">
                                 <rect key="frame" x="0.0" y="122" width="414" height="740"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="LIN-t9-t2V" id="0BH-xz-XHe"/>
+                                    <outlet property="delegate" destination="LIN-t9-t2V" id="D5N-X6-wGu"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

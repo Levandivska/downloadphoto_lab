@@ -33,6 +33,7 @@
             <connections>
                 <outlet property="text" destination="m93-EX-ojP" id="Q6G-0a-h8J"/>
                 <outlet property="textLabel" destination="m93-EX-ojP" id="ucl-gk-hBs"/>
+                <outlet property="title" destination="m93-EX-ojP" id="8kb-1B-Cfq"/>
             </connections>
             <point key="canvasLocation" x="326.08695652173918" y="31.138392857142854"/>
         </tableViewCell>

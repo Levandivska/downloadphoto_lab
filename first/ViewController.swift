@@ -86,12 +86,22 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.customInit(text: activeDownloads[indexPath.row].NetUrl)
             return cell
         case 2:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "doneTableCell") as? DoneTableCell else {
-                fatalError("The dequeued cell is not an instance of doneTableCell.")
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "processTableCell") as? ProcessTableCell else {
+                fatalError("The dequeued cell is not an instance of processTableCell.")
             }
             
+            print("doneList Item:  ", doneList[indexPath.row])
             cell.customInit(text: doneList[indexPath.row])
             return cell
+            
+            
+            //  TO DO -> fix error here
+//            guard let cell = tableView.dequeueReusableCell(withIdentifier: "doneTableCell") as? DoneTableCell else {
+//                fatalError("The dequeued cell is not an instance of doneTableCell.")
+//            }
+//
+//            cell.customInit(text: doneList[indexPath.row])
+//            return cell
             
         default:
             fatalError("Something went wrong")

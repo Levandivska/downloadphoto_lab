@@ -21,7 +21,6 @@
 		0F3B5FC72416BDFB00033A18 /* DoneTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B5FC52416BDFB00033A18 /* DoneTableCell.xib */; };
 		0F3B6044241ACBBE00033A18 /* ToDoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B6042241ACBBE00033A18 /* ToDoTableCell.swift */; };
 		0F3B6045241ACBBE00033A18 /* ToDoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B6043241ACBBE00033A18 /* ToDoTableCell.xib */; };
-		0F3B6047241D1B4F00033A18 /* ImgsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B6046241D1B4F00033A18 /* ImgsRepository.swift */; };
 		0F3B6051241FC62500033A18 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B6050241FC62500033A18 /* Download.swift */; };
 		0FF3428224169CE300389CB7 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3428124169CE300389CB7 /* ToDoViewController.swift */; };
 		0FF3428324169CE300389CB7 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3428124169CE300389CB7 /* ToDoViewController.swift */; };
@@ -66,7 +65,6 @@
 		0F3B5FC52416BDFB00033A18 /* DoneTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneTableCell.xib; sourceTree = "<group>"; };
 		0F3B6042241ACBBE00033A18 /* ToDoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableCell.swift; sourceTree = "<group>"; };
 		0F3B6043241ACBBE00033A18 /* ToDoTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoTableCell.xib; sourceTree = "<group>"; };
-		0F3B6046241D1B4F00033A18 /* ImgsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgsRepository.swift; sourceTree = "<group>"; };
 		0F3B6050241FC62500033A18 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		0FF342792414528B00389CB7 /* hpple */ = {isa = PBXFileReference; lastKnownFileType = folder; name = hpple; path = ../../Downloads/hpple; sourceTree = "<group>"; };
 		0FF3427B24145A5700389CB7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -131,7 +129,6 @@
 				0F1AD287240EC2FD0077B1E2 /* LaunchScreen.storyboard */,
 				0F1AD28A240EC2FD0077B1E2 /* Info.plist */,
 				0F1AD282240EC2FB0077B1E2 /* first.xcdatamodeld */,
-				0F3B6046241D1B4F00033A18 /* ImgsRepository.swift */,
 				0F3B6050241FC62500033A18 /* Download.swift */,
 			);
 			path = first;
@@ -319,7 +316,6 @@
 				0F3B6044241ACBBE00033A18 /* ToDoTableCell.swift in Sources */,
 				0F1AD284240EC2FB0077B1E2 /* first.xcdatamodeld in Sources */,
 				0F1AD27C240EC2FB0077B1E2 /* AppDelegate.swift in Sources */,
-				0F3B6047241D1B4F00033A18 /* ImgsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

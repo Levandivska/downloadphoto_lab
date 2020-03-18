@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LIN-t9-t2V">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="AYh-Ex-js1">
+            <objects>
+                <viewController id="LIN-t9-t2V" customClass="MainViewController" customModule="first" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lpo-QA-Veq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c5B-Fn-XCw">
+                                <rect key="frame" x="97" y="74" width="220" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="bwb-fD-Rxb"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="To Do"/>
+                                    <segment title="In Progress"/>
+                                    <segment title="Done"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchTableViewAction:" destination="LIN-t9-t2V" eventType="valueChanged" id="aEu-ye-15K"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eXH-c8-sg1">
+                                <rect key="frame" x="0.0" y="122" width="414" height="740"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="LIN-t9-t2V" id="0BH-xz-XHe"/>
+                                    <outlet property="delegate" destination="LIN-t9-t2V" id="D5N-X6-wGu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eXH-c8-sg1" firstAttribute="leading" secondItem="Lpo-QA-Veq" secondAttribute="leading" id="1zs-yL-fWz"/>
+                            <constraint firstAttribute="trailing" secondItem="eXH-c8-sg1" secondAttribute="trailing" id="GCT-u0-Ho7"/>
+                            <constraint firstItem="eXH-c8-sg1" firstAttribute="bottom" secondItem="Yrj-5M-Go8" secondAttribute="bottom" id="Gsm-GU-xex"/>
+                            <constraint firstItem="eXH-c8-sg1" firstAttribute="top" secondItem="c5B-Fn-XCw" secondAttribute="bottom" constant="20" id="Lkr-Id-6dO"/>
+                            <constraint firstItem="eXH-c8-sg1" firstAttribute="centerX" secondItem="c5B-Fn-XCw" secondAttribute="centerX" id="d0j-gx-KJW"/>
+                            <constraint firstItem="c5B-Fn-XCw" firstAttribute="top" secondItem="Yrj-5M-Go8" secondAttribute="top" constant="30" id="lYy-AI-CcX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yrj-5M-Go8"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="eXH-c8-sg1" id="Dor-mh-7Bg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R9W-nW-Ym0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543" y="134"/>
+        </scene>
+    </scenes>
+</document>
